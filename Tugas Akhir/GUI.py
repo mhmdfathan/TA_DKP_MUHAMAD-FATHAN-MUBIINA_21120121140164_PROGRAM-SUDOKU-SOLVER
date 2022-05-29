@@ -1,3 +1,16 @@
+#Tugas TA
+#Muhamad Ibnu Fadhil
+
+#List Modul yang digunakan
+#1. Modul 1 : Variable
+#2. Modul 2 : if-else
+#3. Modul 3 : Perulangan for
+#4. Modul 4 : Function
+#5. Modul 5 : OOP
+#6. Modul 8 : GUI
+
+
+
 from tkinter import *
 from solve import solve
 
