@@ -1,5 +1,6 @@
 N = 9 
 
+#mengecek kotak sudoku yang kosong
 def isSafe(sudoku, row, col, num):
     for i in range(9):
         if sudoku[row][i] == num:
@@ -17,6 +18,7 @@ def isSafe(sudoku, row, col, num):
                 return False
     return True
 
+#fungsi pengkondisian untuk solving sudoku
 def solveSudoku(sudoku, row, col):
     if row == N - 1 and col == N:
         return True
@@ -38,6 +40,7 @@ def solveSudoku(sudoku, row, col):
         sudoku[row][col] = 0
     return False
 
+#mengecek jika sudoku mempunyai penyelesaian
 def solve(sudoku):
     if solveSudoku(sudoku, 0 , 0):
         return sudoku
