@@ -20,7 +20,7 @@ root.title("Fat's Sudoku Solver")
 root.geometry("324x550")
 
 
-
+#label keterangan program
 label = Label(root,text="Fill in the numbers and click solve").grid(row=0, column=1, columnspan=10)
 
 errLabel = Label(root, text="", fg="red")
@@ -31,6 +31,7 @@ solvedLabel.grid(row=15, column=1, columnspan=10, pady=5)
 
 cells = {}
 
+#validasi kolom
 def ValidateNumber(P):
     
     out = (P.isdigit() or P == "") and len(P) < 2
